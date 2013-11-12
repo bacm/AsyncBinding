@@ -1,0 +1,13 @@
+﻿<Window x:Class="PrimeGeneratorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="126.316" Width="525">
+    <Grid>
+        <Button Content="{Binding AvailableAction}" HorizontalAlignment="Left" Margin="10,10,0,0" 
+                VerticalAlignment="Top" Width="137" Height="77"
+                Command="{Binding RunCommand}"/>
+        <Label Content="prime number :" HorizontalAlignment="Left" Margin="169,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Prime, FallbackValue=0}" HorizontalAlignment="Left" Margin="265,33,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
