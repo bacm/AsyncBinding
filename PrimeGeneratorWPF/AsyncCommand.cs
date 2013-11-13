@@ -3,6 +3,7 @@ using System.ComponentModel;
 
 namespace PrimeGeneratorWPF
 {
+    // based on http://tech.norabble.com/2008/10/asynchronous-wpf.html
     public abstract class AsyncCommand : IRunWorkerCommand
     {
         private bool _isExecuting;
